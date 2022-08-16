@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+         font-family: 'Josefin Sans', sans-serif;
+     }
+     body{
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:url(dark2.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden;
+        }
+        .about .content img{
+            height: auto;
+            width: 600px;
+            max-width: 100%;
+        }
+        .text{
+            width: 550px;
+            max-width: 100%;
+            padding: 0 10px;
+        }
+        .content{
+            width: 1280px;
+            max-width: 95%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .text h1{
+            color: #ffcc74;
+            font-size: 85px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+        .text h5{
+            color: white;
+            font-size: 25px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+        .text p{
+            color: #c0c4d6;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 1px;
+            margin-bottom: 45px;
+        }
+        button{
+            background-color: #ffcc74;
+            color: black;
+            border: 2px solid transparent;
+            text-decoration: none;
+            padding: 10px 30px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        button:hover{
+            transform: scale(1.2);
+            background-color: transparent;
+            border: 2px solid #ffcc74;
+            color: #ffcc74;
+            transition: .4s;
+            cursor: pointer;
+        }
+        @media screen and (max-width:1180px){
+            .about{
+                width: 100%;
+                height: auto;
+                padding: 70px 0px;
+            }
+        }
+        @media screen and (max-width:650px){
+            .about .content img{
+                margin-bottom: 35px;
+            }
+            .text h1{
+                font-size: 60px;
+                margin-bottom: 25px;
+            }
+        }
+    </style>
+    <title>About Me</title>
+</head>
+<body>
+    <section class="about">
+        <div class="content">
+            <img src="success2.png" alt="">
+            <div class="text">
+                <h1>About Me</h1>
+                <h5>Web Designer</h5>
+                <p>I am a front-end web developer.I can provide clean code and pixel perfect design.I also
+                    make the website more and more interactive with web animations.I can also offer responsive
+                    designs for any website in order to be compatible with all devices.A responsive design will make your 
+                    website to be more interactive and accessible to all users,regardless of their devices.
+                </p>
+                <a href="contact.html">
+                <button type="button">Contact Me</button>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

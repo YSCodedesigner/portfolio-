@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            background: url(dark2.jpeg);
+            min-height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'raleway',sans-serif;
+            color: #fff;
+        }
+        .wrapper h1{
+            font-size: 36px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        .wrapper h5{
+            font-size: 20px;
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 80px;
+            
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .card{
+            width: 380px;
+            height: 250px;
+            border-radius: 15px;
+            margin: 7px;
+            padding: 20px 30px;
+            position: relative;
+            background: rgba(255,255,255,0.2);
+            box-shadow: 10px 20px 25px rgba(0,0,0,0.2);
+        }
+        .card img{
+            height: 90px;
+            width: 90px;
+            border: 2px solid #f2f2f2;
+            border-radius: 50%;
+            position: absolute;
+            top: -40px;
+            left: 20px;
+        }
+        .card p{
+            font-size: 16px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+        .card h2{
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        .card i{
+            font-size: 60px;
+            position: absolute;
+            bottom: 20px;
+            right: 25px;
+            color: #b2bec3;
+        }
+        .card:hover{
+            transform: scale(1.4);
+            color: #333;
+            background: #fff;
+            z-index: 10000;
+        }
+
+        @media(max-width:768px){
+            .cards{
+                width: 100%;;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .card{
+                margin: 40px 0;
+            }
+        }
+    </style>
+    <title>My Clients Reviews</title>
+</head>
+<body>
+   <div class="wrapper">
+       <h1>My Happy Clients Reviews</h1>
+       <h5>Check what they say about me...</h5>
+
+       <div class="cards">
+           <div class="card">
+               <img src="pm1.jpeg" alt="">
+               <p>Success is very professional and respectful,the work he did for me was amazing.I love the webpage design and layout,
+                   he did exactly what I wanted.
+               </p>
+             <h2>John Havert</h2>
+             <i class="fa fa-quote-left"></i>
+           </div>
+           <div class="card">
+            <img src="pf2.jpeg" alt="">
+            <p>Excellent and fantastic work.I will highly recommend success to other people who are looking for web designers
+                because,he is a good web designer.
+            </p>
+          <h2>Amanda Florence</h2>
+          <i class="fa fa-quote-left"></i>
+        </div>
+        <div class="card">
+            <img src="pm4.jpeg" alt="">
+            <p>Impressive work and totally worth the money,I am really satisfied with my website and is a great opportunity to finally promote my
+                business.Thank you success.
+            </p>
+          <h2>Daniel Cheng</h2>
+          <i class="fa fa-quote-left"></i>
+        </div>
+       </div>
+   </div> 
+</body>
+</html>
